@@ -1,10 +1,16 @@
 # Fraud Analytics
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-56B9EB?logo=snowflake&logoColor=white)
+![dbt](https://img.shields.io/badge/dbt-FF694B?logo=dbt&logoColor=white)
+
+
+## Descrição
+
 Projeto de análise de fraude para uma empresa ficticia chamada Horizon utilizando Snowflake e DBT.
 
-### Descrição
-
-## marts: 
-# Views tratadas:
+### marts: 
+#### Views tratadas:
 
 Performance Geral:
 
@@ -58,8 +64,8 @@ Performance Geral:
 
 
 Índice de risco de maquinetas:
-    Imagine que, como analista, você precise identificar quais maquinetas com transações recentemente aprovadas representam maior exposição a risco.
 
+    Imagine que, como analista, você precise identificar quais maquinetas com transações recentemente aprovadas representam maior exposição a risco.
     O Merchant Risk foi desenvolvido com esse objetivo: fornecer uma classificação estruturada de risco para estabelecimentos, priorizando aqueles que nunca haviam transacionado anteriormente e passaram a registrar transações aprovadas que posteriormente foram contestadas como fraude.
 
     Essa métrica permite identificar rapidamente comportamentos atípicos e potenciais pontos de vulnerabilidade na operação.
@@ -70,9 +76,9 @@ Performance Geral:
 
 
 ### Tecnologias:
-- Python
-- Snowflake
-- DBT CLI
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40"/>
+<img src="https://www.vectorlogo.zone/logos/snowflake/snowflake-icon.svg" width="36"/>
+<img src="https://logo.svgcdn.com/logos/dbt-icon.svg" width="36" alt="dbt logo"/>
 
 
 ### Objetivo:
