@@ -76,9 +76,7 @@ Performance Geral:
 
 
 ### Tecnologias:
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40"/>
-<img src="https://www.vectorlogo.zone/logos/snowflake/snowflake-icon.svg" width="36"/>
-<img src="https://logo.svgcdn.com/logos/dbt-icon.svg" width="36" alt="dbt logo"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40"/> <img src="https://www.vectorlogo.zone/logos/snowflake/snowflake-icon.svg" width="36"/> <img src="https://logo.svgcdn.com/logos/dbt-icon.svg" width="36" alt="dbt logo"/>
 
 
 ### Objetivo:
