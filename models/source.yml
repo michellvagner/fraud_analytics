@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: sources
+    database: LEARNING
+    schema: ARTEMIS
+    tables:
+      - name: authorization
+      - name: monitoring_alerts
+      - name: blocked_cards
