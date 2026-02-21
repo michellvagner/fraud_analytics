@@ -1,13 +1,14 @@
 # Fraud Analytics
-Projeto de análise de fraude para uma empresa ficticia chamada Horizon utilizando Snowflake e DBT
+Projeto de análise de fraude para uma empresa ficticia chamada Horizon utilizando Snowflake e DBT.
 
 ### Descrição
 
-[!NOTE]
-marts:
-    Views tratadas:
+## marts: 
+# Views tratadas:
 
-    Performance Geral
+Performance Geral:
+
+    Imagine que você analista precise visualizar rapidamente como andam os resultados gerais do setor, para isso você pode conferir em um relatório fechado, o performance horizon foi criado justamente para isso, visualizar indicadores chaves de forma resumida.
 
     1 - Volumetria transacional agrupado por banco e periodo
     ---------------------------------------------
@@ -53,7 +54,20 @@ marts:
     Dias passados do ultimo alerta até acontecer o bloqueio definitivo
 
     -----
-    Quantidade total de cartões que sofreram cancelamento definitivo ao passar por uma de nossas regras
+    Quantidade total de cartões que sofreram cancelamento definitivo ao passar por uma de nossas regras.
+
+
+Índice de risco de maquinetas:
+    Imagine que, como analista, você precise identificar quais maquinetas com transações recentemente aprovadas representam maior exposição a risco.
+
+    O Merchant Risk foi desenvolvido com esse objetivo: fornecer uma classificação estruturada de risco para estabelecimentos, priorizando aqueles que nunca haviam transacionado anteriormente e passaram a registrar transações aprovadas que posteriormente foram contestadas como fraude.
+
+    Essa métrica permite identificar rapidamente comportamentos atípicos e potenciais pontos de vulnerabilidade na operação.
+    O score varia de 1 a 10, onde:
+    1 → Baixo risco
+    10 → Alto risco
+    Quanto maior o Risk Fraud Score, maior a probabilidade de exposição a fraude.
+
 
 ### Tecnologias:
 - Python
