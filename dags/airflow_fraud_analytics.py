@@ -1,10 +1,12 @@
 # %%
 
 from datetime import datetime, timedelta
-from airflow.providers.standard.operators.bash import BashOperator
-
+from airflow.providers.docker.operators.docker import DockerOperator
+from docker.types import Mount
 from airflow.sdk import DAG
+# %%
 import os
+home = os.environ.get("HOST_HOME", os.path.expanduser("~"))
 
 # %%
 
@@ -17,7 +19,25 @@ with DAG(
     tags=["dbt"]
 ) as dag:
 
-    dbt_run = BashOperator(
+    dbt_run = DockerOperator(
         task_id="rodar_dbt",
-        bash_command="source /home/vagner/repos/github/fraud_analytics/env/bin/activate && cd /home/vagner/repos/github/fraud_analytics && dbt run"
+        image="fraud_analytics-dbt:latest",
+        command="uv run dbt run",
+        auto_remove='success',
+        mount_tmp_dir=False,
+        docker_url="unix://var/run/docker.sock",  # socket do Docker
+        network_mode="bridge",
+        force_pull=False,  # usa imagem local
+        mounts=[
+        Mount(
+            source=f"{home}/.dbt",
+            target="/root/.dbt",
+            type="bind"
+        ),
+        Mount(
+            source=f"{home}/.local/share/security",
+            target=f"{home}/.local/share/security",
+            type="bind"
+        )
+    ]
     )

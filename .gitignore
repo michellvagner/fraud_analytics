@@ -1,5 +1,12 @@
 env/
+.venv/
 target/
 dbt_packages/
 logs/
 __pycache__
+.vscode/
+
+# chaves e credenciais
+*.key
+*.pem
+private/
