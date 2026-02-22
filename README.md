@@ -98,7 +98,7 @@ O Merchant Risk foi desenvolvido com esse objetivo: fornecer uma classificação
 </picture>
 <picture>
     <source media = "(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/snowflake/white">
-    <img src="https://cdn.simpleicons.org/snowflake/white" width="36"/>&nbsp;
+    <img src="https://cdn.simpleicons.org/snowflake/black" width="36"/>&nbsp;
 </picture>
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/docker/white">
