@@ -90,7 +90,6 @@ O Merchant Risk foi desenvolvido com esse objetivo: fornecer uma classificação
     10 → Alto risco
     Quanto maior o Risk Fraud Score, maior a probabilidade de exposição a fraude.
 
-
 ### Tecnologias:
 
 <picture>
