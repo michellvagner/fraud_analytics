@@ -2,10 +2,9 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![Snowflake](https://img.shields.io/badge/Snowflake-56B9EB?logo=snowflake&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Airflow](https://img.shields.io/badge/Airflow-017CEE?logo=apacheairflow&logoColor=white)
 ![dbt](https://img.shields.io/badge/dbt-FF694B?logo=dbt&logoColor=white)
-![Airflow](https://img.shields.io/badge/Airflow-%2300488B?logo=airflow&logoColor=white)
-
-
 
 ## Descrição
 
@@ -91,19 +90,41 @@ O Merchant Risk foi desenvolvido com esse objetivo: fornecer uma classificação
     10 → Alto risco
     Quanto maior o Risk Fraud Score, maior a probabilidade de exposição a fraude.
 
-
 ### Tecnologias:
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40"/> <img src="https://www.vectorlogo.zone/logos/snowflake/snowflake-icon.svg" width="36"/> <img src="https://logo.svgcdn.com/logos/dbt-icon.svg" width="36" alt="dbt logo"/>&nbsp;&nbsp;<img src="https://airflow.apache.org/images/airflow-logo.svg" width="90" style="background: white; padding: 2px;">
-
+<picture>
+    <source media = "(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/python/white">
+    <img src="https://cdn.simpleicons.org/python/black" width="36"/>&nbsp;
+</picture>
+<picture>
+    <source media = "(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/snowflake/white">
+    <img src="https://cdn.simpleicons.org/snowflake/white" width="36"/>&nbsp;
+</picture>
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/apacheairflow/white">
+    <img src="https://cdn.simpleicons.org/apacheairflow/black" width="36"/>&nbsp;
+</picture>
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/docker/white">
+    <img src="https://cdn.simpleicons.org/docker/black" width="36"/>
+</picture>
 
 ### Objetivo:
 Construir pipelines de dados para identificaçào de padrões suspeitos e geração de alertas.
 
+## Pré-requisitos
+- WSL - Ubuntu 22.04
+- Docker instalado
+- ~/.dbt/profiles.yml configurado com suas credenciais
+- Chave PEM em `~/.local/share/security/rsa_key_pkcs8.pem`
+
 ## Como rodar?
 ```bash
 git clone <repo>
-python -m pipenv sync
+cd <repo>
+docker compose build --no-cache
+docker compose up
+Acesse: localhost:8080
 ```
 
 ### 
