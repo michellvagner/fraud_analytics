@@ -101,13 +101,18 @@ O Merchant Risk foi desenvolvido com esse objetivo: fornecer uma classificação
     <img src="https://cdn.simpleicons.org/snowflake/white" width="36"/>&nbsp;
 </picture>
 <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/docker/white">
+    <img src="https://cdn.simpleicons.org/docker/black" width="36"/>
+</picture>
+<picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/apacheairflow/white">
     <img src="https://cdn.simpleicons.org/apacheairflow/black" width="36"/>&nbsp;
 </picture>
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/docker/white">
-    <img src="https://cdn.simpleicons.org/docker/black" width="36"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://www.getdbt.com/img/logos/dbt-labs-logo-light.svg" width="168"/>
+    <img src="https://www.getdbt.com/img/logos/dbt-labs-logo.svg" width="168"/>&nbsp;
 </picture>
+
 
 ### Objetivo:
 Construir pipelines de dados para identificaçào de padrões suspeitos e geração de alertas.
