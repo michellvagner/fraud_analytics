@@ -1,0 +1,11 @@
+[project]
+name = "fraud-analytics"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "apache-airflow[celery]==3.0.0",
+    "dbt-core>=1.11.6",
+    "dbt-snowflake>=1.11.2",
+]

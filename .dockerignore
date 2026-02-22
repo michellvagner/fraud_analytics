@@ -1,0 +1,24 @@
+# Ambiente virtual e caches
+env/
+__pycache__/
+*.pyc
+
+# Git e metadados
+.git
+.gitignore
+
+# Arquivos de build e cache
+.docker/
+Dockerfile
+docker-compose.yml
+
+# DBT / Airflow caches (se existir)
+target/
+logs/
+.dbt/
+
+# segurança
+*.key
+*.pem
+private/
+~/.dbt/

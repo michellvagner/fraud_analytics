@@ -1,0 +1,8 @@
+FROM apache/airflow:3.1.7
+
+USER root
+RUN apt-get update && apt-get install -y git
+RUN groupadd -g 999 docker && usermod -aG docker airflow
+
+USER airflow
+RUN pip install apache-airflow-providers-docker
